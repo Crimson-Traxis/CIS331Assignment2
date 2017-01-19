@@ -5,8 +5,76 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CIS331Assignment2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="Pizza Planet Order Form" Height="400" Width="535" MinHeight="400" MinWidth="535" MaxHeight="400" MaxWidth="535" >
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <DockPanel LastChildFill="True">
+            <TextBlock x:Name="textBlockCustName" Text="Customer Name:" Grid.Row="0" VerticalAlignment="Center" DockPanel.Dock="Left" Margin="0,0,5,0"/>
+            <TextBox x:Name="textBoxCustName" Grid.Row="0" VerticalAlignment="Center" VerticalContentAlignment="Center" DockPanel.Dock="Right" Height="20"/>
+        </DockPanel>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Horizontal" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock x:Name="textBlockPizzaSize" Text="Pizza Size:" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                <local:NumberUpDown x:Name="numberUpDownPizzaSize" InitailNumber="0" Width="120" MinValue="0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock x:Name="textBlockQuantity" Text="Quantity:" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                <local:NumberUpDown x:Name="numberUpDownQuantity" InitailNumber="0" Width="120" MinValue="0"/>
+            </StackPanel>
+        </Grid>
+        <GroupBox x:Name="groupBoxCrustSelection" Header="Stuffed Crust Selection:" Grid.Row="2">
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <RadioButton x:Name="radioButtonPlain" Content="Plain" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <RadioButton x:Name="radioButtonGarlic" Content="Garlic" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <RadioButton x:Name="radioButtonCheese" Content="Cheese" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <RadioButton x:Name="radioButtonHam" Content="Ham" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <RadioButton x:Name="radioButtonPepperoni" Content="Pepperoni" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="groupBoxToppings" Header="Toppings:" Grid.Row=" 3">
+            <Grid Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition  Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <CheckBox x:Name="checkBoxPepperoni" Content="Pepperoni" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="15,0,0,0"/>
+                <CheckBox x:Name="checkBoxBlackOlives" Content="Black Olives" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="15,0,0,0"/>
+                <CheckBox x:Name="checkBoxMushrooms" Content="Mushrooms" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="15,0,0,0"/>
+                <CheckBox x:Name="checkBoxSausage" Content="Sausage" Grid.Row="0" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="15,0,0,0"/>
+                <CheckBox x:Name="checkBoxHam" Content="Ham" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="15,0,0,0"/>
+                <CheckBox x:Name="checkBoxGreenOlives" Content="Green Olives" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="15,0,0,0"/>
+                <CheckBox x:Name="checkBoxPineapple" Content="Pineapple" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="15,0,0,0"/>
+                <CheckBox x:Name="checkBoxExtraCheese" Content="Extra Cheese" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="15,0,0,0"/>
+                <CheckBox x:Name="checkBoxGreenPeppers" Content="Green Peppers" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="15,0,0,0"/>
+                <CheckBox x:Name="checkBoxBananaPeppers" Content="Banana Peppers" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="15,0,0,0"/>
+                <CheckBox x:Name="checkBoxBacon" Content="Bacon" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="15,0,0,0"/>
+                <CheckBox x:Name="checkBoxExtraAnchoves" Content="Anchovies" Grid.Row="2" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="15,0,0,0"/>
+            </Grid>
+        </GroupBox>
+        <Button x:Name="buttonPlaceOrder" Content="Place Order" Grid.Row="4" Margin="0,10,0,10"/>
     </Grid>
 </Window>
