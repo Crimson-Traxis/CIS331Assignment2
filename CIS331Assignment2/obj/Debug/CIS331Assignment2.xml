@@ -6,6 +6,41 @@ CIS331Assignment2
 </name>
 </assembly>
 <members>
+<member name="T:CIS331Assignment2.NumberUpDown">
+<summary>
+NumberUpDown
+</summary>
+</member>
+<member name="M:CIS331Assignment2.NumberUpDown.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:CIS331Assignment2.Application">
+<summary>
+Application
+</summary>
+</member>
+<member name="M:CIS331Assignment2.Application.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="M:CIS331Assignment2.Application.Main">
+<summary>
+Application Entry Point.
+</summary>
+</member>
+<member name="T:CIS331Assignment2.MainWindow">
+<summary>
+MainWindow
+</summary>
+</member>
+<member name="M:CIS331Assignment2.MainWindow.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
 <member name="T:CIS331Assignment2.My.MyWpfExtension">
  <summary>
  Module used to define the properties that are available in the My Namespace for WPF
@@ -52,41 +87,6 @@ CIS331Assignment2
 <summary>
   Overrides the current thread's CurrentUICulture property for all
   resource lookups using this strongly typed resource class.
-</summary>
-</member>
-<member name="T:CIS331Assignment2.NumberUpDown">
-<summary>
-NumberUpDown
-</summary>
-</member>
-<member name="M:CIS331Assignment2.NumberUpDown.InitializeComponent">
-<summary>
-InitializeComponent
-</summary>
-</member>
-<member name="T:CIS331Assignment2.Application">
-<summary>
-Application
-</summary>
-</member>
-<member name="M:CIS331Assignment2.Application.InitializeComponent">
-<summary>
-InitializeComponent
-</summary>
-</member>
-<member name="M:CIS331Assignment2.Application.Main">
-<summary>
-Application Entry Point.
-</summary>
-</member>
-<member name="T:CIS331Assignment2.MainWindow">
-<summary>
-MainWindow
-</summary>
-</member>
-<member name="M:CIS331Assignment2.MainWindow.InitializeComponent">
-<summary>
-InitializeComponent
 </summary>
 </member>
 <member name="T:CIS331Assignment2.XamlGeneratedNamespace.GeneratedInternalTypeHelper">

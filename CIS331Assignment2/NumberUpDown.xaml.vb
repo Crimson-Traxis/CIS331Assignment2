@@ -64,7 +64,7 @@
 
     Public WriteOnly Property InitailNumber() As Long
         Set(ByVal value As Long)
-            textBoxNumber.Text = value
+            Number = value
         End Set
     End Property
 End Class
