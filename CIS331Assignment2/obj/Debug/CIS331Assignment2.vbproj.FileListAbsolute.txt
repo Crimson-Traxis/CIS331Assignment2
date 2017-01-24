@@ -42,3 +42,5 @@ C:\Users\trent\Documents\GitHub\CIS331Assignment2\CIS331Assignment2\obj\Debug\In
 C:\Users\trent\Documents\GitHub\CIS331Assignment2\CIS331Assignment2\obj\Debug\ToppingItem.g.vb
 C:\Users\trent\Documents\GitHub\CIS331Assignment2\CIS331Assignment2\obj\Debug\Themes\Generic.baml
 C:\Users\trent\Documents\GitHub\CIS331Assignment2\CIS331Assignment2\obj\Debug\ToppingItem.baml
+C:\Users\trent\Documents\GitHub\CIS331Assignment2\CIS331Assignment2\bin\Debug\Newtonsoft.Json.dll
+C:\Users\trent\Documents\GitHub\CIS331Assignment2\CIS331Assignment2\bin\Debug\Newtonsoft.Json.xml

@@ -1,4 +1,8 @@
-﻿Public Class InvoiceWindow
+﻿Imports System.Net.Http
+Imports System.Text
+Imports Newtonsoft.Json
+
+Public Class InvoiceWindow
 
     Private order As CustomerOrder
     Public exiting As Boolean
@@ -51,8 +55,33 @@
 
     End Sub
 
-    Private Sub buttonChangeOrder_Click(sender As Object, e As RoutedEventArgs) Handles buttonChangeOrder.Click
+    Private Async Sub buttonChangeOrder_Click(sender As Object, e As RoutedEventArgs) Handles buttonChangeOrder.Click
         exitWithoutWaring = True
+        Dim o As order = New order()
+        o.customer_name = textBlockUser.Text
+        o.pizza_size = order.PizzaSize
+        o.pizza_quantity = order.PizzaQuantity
+        o.pizza_crust = order.Crust
+        Dim tempString As String = ""
+        For Each topping In order.Toppings
+            tempString &= topping.ToString() & ","
+        Next
+        tempString = tempString.Substring(0, tempString.Length - 1)
+        o.pizza_toppings = tempString
+
+        Using client As HttpClient = New HttpClient()
+            Dim json As String = Await Task.Run(Function()
+                                                    Return JsonConvert.SerializeObject(o)
+                                                End Function)
+            Dim HttpContent As StringContent = New StringContent(json, Encoding.UTF8, "application/json")
+            Try
+                Dim u As Uri = New Uri("http://34.196.65.17:38502/InsertOrder")
+                Dim response = Await client.PostAsync(u, HttpContent)
+                Dim s = Await response.Content.ReadAsStringAsync()
+            Catch ex As Exception
+
+            End Try
+        End Using
         Me.Close()
     End Sub
 
