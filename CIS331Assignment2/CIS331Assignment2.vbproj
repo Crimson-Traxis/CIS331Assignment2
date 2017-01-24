@@ -68,9 +68,22 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CrustEnumeration.vb" />
+    <Compile Include="CustomerOrder.vb" />
+    <Compile Include="InvoiceWindow.xaml.vb">
+      <DependentUpon>InvoiceWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="NumberUpDown.xaml.vb">
       <DependentUpon>NumberUpDown.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ToppingEnumeration.vb" />
+    <Compile Include="ToppingItem.xaml.vb">
+      <DependentUpon>ToppingItem.xaml</DependentUpon>
+    </Compile>
+    <Page Include="InvoiceWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -84,6 +97,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="NumberUpDown.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ToppingItem.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

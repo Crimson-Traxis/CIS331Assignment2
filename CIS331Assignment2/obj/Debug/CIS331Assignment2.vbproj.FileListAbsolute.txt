@@ -37,3 +37,8 @@ C:\Users\tkillinger\Documents\GitHub\CIS331Assignment2\CIS331Assignment2\obj\Deb
 C:\Users\tkillinger\Documents\GitHub\CIS331Assignment2\CIS331Assignment2\obj\Debug\CIS331Assignment2.g.resources
 C:\Users\tkillinger\Documents\GitHub\CIS331Assignment2\CIS331Assignment2\obj\Debug\CIS331Assignment2.Resources.resources
 C:\Users\tkillinger\Documents\GitHub\CIS331Assignment2\CIS331Assignment2\obj\Debug\CIS331Assignment2.vbproj.GenerateResource.Cache
+C:\Users\trent\Documents\GitHub\CIS331Assignment2\CIS331Assignment2\obj\Debug\InvoiceWindow.g.vb
+C:\Users\trent\Documents\GitHub\CIS331Assignment2\CIS331Assignment2\obj\Debug\InvoiceWindow.baml
+C:\Users\trent\Documents\GitHub\CIS331Assignment2\CIS331Assignment2\obj\Debug\ToppingItem.g.vb
+C:\Users\trent\Documents\GitHub\CIS331Assignment2\CIS331Assignment2\obj\Debug\Themes\Generic.baml
+C:\Users\trent\Documents\GitHub\CIS331Assignment2\CIS331Assignment2\obj\Debug\ToppingItem.baml
