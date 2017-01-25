@@ -8,7 +8,7 @@
     <Border BorderBrush="Black" BorderThickness="1.5" Margin="3">
         <DockPanel Width="140" Height="25" LastChildFill="True">
             <Button x:Name="buttonRemove" Content="X" Width="23" Height="23" VerticalAlignment="Center" DockPanel.Dock="Right" Margin="0,0,1,0"/>
-            <TextBlock x:Name="textBlockTopping" Text="" VerticalAlignment="Center" Margin="5"/>
+            <TextBlock x:Name="textBlockTopping" Text="" VerticalAlignment="Center" Margin="2" Height="22"/>
         </DockPanel>
     </Border>
 </UserControl>

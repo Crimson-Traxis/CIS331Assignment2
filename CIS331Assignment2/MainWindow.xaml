@@ -17,7 +17,7 @@
             </Grid.RowDefinitions>
             <DockPanel LastChildFill="True">
                 <TextBlock x:Name="textBlockCustName" Text="Customer Name:" Grid.Row="0" VerticalAlignment="Center" DockPanel.Dock="Left" Margin="0,0,5,0"/>
-                <TextBox x:Name="textBoxCustName" Grid.Row="0" VerticalAlignment="Center" VerticalContentAlignment="Center" DockPanel.Dock="Right" Height="20"/>
+                <TextBox x:Name="textBoxCustName" Grid.Row="0" VerticalAlignment="Center" VerticalContentAlignment="Center" DockPanel.Dock="Right" Height="23"/>
             </DockPanel>
             <Grid Grid.Row="1">
                 <Grid.ColumnDefinitions>

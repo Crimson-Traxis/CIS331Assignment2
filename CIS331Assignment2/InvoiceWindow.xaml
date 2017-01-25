@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CIS331Assignment2"
         mc:Ignorable="d"
-        Title="InvoiceWindow" Height="600" Width="700" MinHeight="600" MinWidth="700" Closing="Window_Closing">
+        Title="Pizza Planet Invoice" Height="650" Width="700" MinHeight="650" MinWidth="700" Closing="Window_Closing">
     <Grid Margin="10">
         <Grid.RowDefinitions>
+            <RowDefinition Height=".8*"/>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="3*"/>
+            <RowDefinition Height="4*"/>
             <RowDefinition Height="2*"/>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="1*"/>
