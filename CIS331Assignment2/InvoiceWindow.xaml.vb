@@ -19,6 +19,9 @@
 '- exitWithoutWaring - allows exiting window without warning-
 '-                     ex. to change order or new order     -
 '- cheeseTopping - topping item that cannot be removed      -
+'- additionalCrustCost - cost for non plain crust           -
+'- topppingCost - cost for additional toppings              -
+'- costPerInch - cost per in^2 of pizza                     -
 '------------------------------------------------------------
 Public Class InvoiceWindow
 
@@ -26,6 +29,9 @@ Public Class InvoiceWindow
     Public exiting As Boolean
     Private exitWithoutWaring As Boolean
     Private cheeseTopping As ToppingItem
+    Private Const additionalCrustCost = 2.25
+    Private Const topppingCost = 1.5
+    Private Const costPerInch = 0.07
 
     '------------------------------------------------------------ 
     '-                Subprogram Name: New                      - 
@@ -109,17 +115,17 @@ Public Class InvoiceWindow
     '- toppingCost - cost of the topping                        -
     '------------------------------------------------------------
     Private Sub UpdateGui()
-        Dim areaCost As Decimal = Math.PI * ((order.PizzaSize / 2.0) ^ 2) * 0.07
+        Dim areaCost As Decimal = Math.PI * ((order.PizzaSize / 2.0) ^ 2) * costPerInch
         textBlockAreaCost.Text = areaCost.ToString("c")
         Dim crustCost As Decimal = 0
         If order.Crust <> Crust.Plain Then
-            crustCost = 2.25
+            crustCost = additionalCrustCost
         End If
         textBlockCrustCost.Text = crustCost.ToString("c")
-        Dim toppingCost As Decimal = order.Toppings.Count * 1.5
-        textBlockToppingsCost.Text = toppingCost.ToString("c")
+        Dim toppingc As Decimal = order.Toppings.Count * topppingCost
+        textBlockToppingsCost.Text = toppingc.ToString("c")
         textBlockPizzaQuantity.Text = order.PizzaQuantity
-        textBlockGrandTotal.Text = ((areaCost + crustCost + toppingCost) * order.PizzaQuantity).ToString("c")
+        textBlockGrandTotal.Text = ((areaCost + crustCost + toppingc) * order.PizzaQuantity).ToString("c")
         textBlockCrust.Text = order.Crust.ToString()
         textBlockPizzaCount.Text = order.PizzaQuantity
         textBlockPizzaSize.Text = order.PizzaSize
